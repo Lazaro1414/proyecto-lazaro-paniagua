@@ -560,61 +560,7 @@ form > button {
 
 
 
- /*
-
-    @media screen (max-width 768px) {
-        
-        .row-sobremi {
-            width: 90%;
-        }
-
-        .row-sobremi { 
-
-    
-            grid-template-columns: 1fr;
-            grid-gap: 50px;
-            margin-left: 0px;
-
-        }
-            
-            
-        
-            .row-sobremi .contenedor-wrapper {
-        
-                padding-left: 0;
-            }
-
-        .row-sobremi .contenedor-dos span.texto-alejo h2 {
-
-            font-size: 35px;
-            font-weight: 700;
-            color: #b46e6e;
-            padding-bottom: 10px;
-            border-bottom-style: solid;
-            border-bottom-width: 3px;
-            border-bottom-color: #b46e6e;
-            line-height: 25px;
-            margin-top: 5px;
-            
-        
-        }
-        
-        
-        
-        
-        
-        .row-sobremi .contenedor-wrapper span.texto-alejo p {
-        
-            font-size: 18px;
-            line-height: 25px;
-            padding-bottom: 20px;
-        
-            padding-top: 20px;
-        
-        }
-        
-    }
-*/
+ 
 
 
 
@@ -681,7 +627,6 @@ margin-top: 100px;
 
 .galeria-inicio h1 {
     
-    
     font-size: 60px;
     width: 100%;
     text-align: center;
@@ -689,8 +634,54 @@ margin-top: 100px;
     margin-top: 15vh;
     color: #98918b;
     font-weight: bold; 
+}
+
+                                            /* Simbologia */
+    
+.Cards-contenedor {
+    flex-direction: column;
+   
+}
+
+.Cards-contenedor{ display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+   
+    
+}
+
+.card {
+     display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 13px 3px rgba(50, 50, 50, 0.256);
+    width: 33%;
+    border-radius: 30px;
+    border: 9px solid rgba(153, 38, 38, 0.485);
 
 }
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 880px)  {
 
     .galeria-imagenes  {

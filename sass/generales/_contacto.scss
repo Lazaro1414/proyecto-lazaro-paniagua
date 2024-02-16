@@ -1,0 +1,139 @@
+.main-contactanos {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo-contactenos.jpg);
+    opacity: 0.8;
+    background-position: center 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .contenedor-contactanos {
+    margin-top: 70px;
+    margin-bottom: 24px;
+    margin-right: 28%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 15px;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .box-info {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 40px;
+  
+    h1 {
+      text-align: left;
+      margin-left: 45px;
+      letter-spacing: 5px;
+      font-family: 'Kalnia', serif;
+      font-family: 'Karla', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Tajawal', sans-serif;
+    }
+  }
+  
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Tajawal', sans-serif;
+  
+    p {
+      font-size: 1rem;
+      font-family: 'Tajawal', sans-serif;
+  
+      i {
+        margin-right: 10px;
+        font-size: 25px;
+      }
+    }
+  }
+  
+  .links-contactos {
+    margin-left: 25px;
+    display: flex;
+    gap: 35px;
+  
+    a {
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      background-color: aliceblue;
+      text-align: center;
+      border-radius: 7px;
+      transition: 0.1s;
+      color: #000000;
+      line-height: 40px;
+      font-size: 20px;
+  
+      &:hover {
+        background-color: #8d8379;
+      }
+    }
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 7px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.99);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 13px 6px -7px rgba(0, 0, 0, 0.1);
+  
+    &:focus,
+    &:hover {
+      border-color: rgb(0, 0, 0);
+      transform: scale(1.01);
+    }
+  }
+  
+  .input-box textarea {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid transparent;
+    border-radius: 7px;
+    box-shadow: 0px 13px 6px -7px rgba(0, 0, 0, 0.1);
+    resize: none;
+    padding: 5px 10px;
+  }
+  
+  .input-box i {
+    color: rgb(0, 0, 0);
+    transform: translateY(-185%) translateX(250px);
+  }
+  
+  form > button {
+    background: #ffffff;
+    color: #8d8379;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 13px 6px -7px rgba(0, 0, 0, 0.1);
+  
+    &:hover {
+      background-color: #8d8379;
+    }
+  }

@@ -1,11 +1,15 @@
-@import "generales/headerfooter";
+/* Estilos Generales */
+
+@import "generales/estilosgenerales";
 
 
-@import "page/inicio"
-@import "page/sobremi"
-@import "page/galeria"
-@import "page/algo"
-@import "page/contacto"
 
-
+@import "generales/headerFooter";
+@import "generales/inicio";
+@import "generales/galeria";
+@import "generales/sobremi";
+@import "generales/algo";
+@import "generales/contacto";
 @import "generales/mediaQ";
+
+

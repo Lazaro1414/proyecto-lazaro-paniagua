@@ -1,0 +1,93 @@
+ /* MediaQ*/
+
+
+
+
+/* MediaQ Nav */
+@media screen and (max-width: 768px) {
+    .nav-principal {
+        font-size: 17px;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        min-height: 20px;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 13px 13px 3px rgba(0,0,0,0.1);
+        margin: auto;
+        padding: 0 10px;  
+
+        img {
+            margin: 10px;
+            width: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto; 
+            -webkit-overflow-scrolling: touch; 
+        }
+
+        ul li {
+            padding: 15px;
+            margin-right: 1;   
+            margin: 0;  
+        }
+
+        ul.nav-menu {
+            display: flex; 
+        }
+
+        ul li a:hover {
+            border-bottom: 2px solid #F4EAE0;
+        }
+
+        .abrir-menu {
+            display: none;
+        }
+
+        &.nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0px 13px 13px 3px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+/* MediaQ Sobre nosotros */
+@media screen and (max-width: 768px) {
+    .contenedor-contactanos {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor-contactanos {
+        grid-template-columns: 1fr;
+        margin-right: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+    

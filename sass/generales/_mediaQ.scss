@@ -66,19 +66,80 @@
 }
 
 /* MediaQ Sobre nosotros */
-@media screen and (max-width: 768px) {
-    .contenedor-contactanos {
-        margin-right: 10%;
+.contenedor-sobremi {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+
+    @media screen and (max-width: 768px) {
+        .row-sobremi {
+            grid-template-columns: 1fr;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem 0;
+            grid-gap: 20px;
+        }
+        
+        .contenedor-sobremi .contenedor-wrapper {
+            padding-left: 0;
+        }
+        
+        .row-sobremi .imagen-alejo img {
+            height: auto;
+        }
+        
+        .contenedor-dos span.texto-alejo h2 {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        
+        .contenedor-dos span.texto-alejo span {
+            width: 50px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .row-sobremi {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+        }
     }
 }
 
-@media screen and (max-width: 480px) {
-    .contenedor-contactanos {
-        grid-template-columns: 1fr;
-        margin-right: 5%;
-    }
-}
 
+/* MediaQ Galeria */
+
+@media (max-width: 880px) {
+    .galeria-imagenes {
+      flex: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .galeria-imagenes {
+      flex: 100%;
+    }
+  }
+
+
+/* MediaQ Contacto */
+
+  @media screen and (max-width: 768px) {
+    .contenedor-contactanos {
+      margin-right: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contenedor-contactanos {
+      grid-template-columns: 1fr;
+      margin-right: 5%;
+    }
+  }
+
+
+  
 
 
 

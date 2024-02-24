@@ -1,42 +1,76 @@
 /* Estilos Generales */
-/*HEADER*/
-.nav-principal {
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@200&family=Karla:ital,wght@1,200&family=Oswald:wght@700&family=Tajawal:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Kalnia", serif;
+  font-family: "Karla", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Tajawal", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-fluid {
   font-size: 17px;
-  display: flex;
   position: fixed;
   width: 100%;
   top: 0;
-  min-height: 60px;
   background-color: rgb(255, 255, 255);
   align-items: center;
-  justify-content: space-between;
   box-shadow: 0px 13px 13px 3px rgba(0, 0, 0, 0.1);
-  margin: auto;
 }
-.nav-principal img {
-  margin: 0;
+
+.navbar {
+  height: 80px;
+  border-radius: 100px;
 }
-.nav-principal img.nav-marca {
+
+.nav-marca {
   width: 80px;
+}
+
+.nav-principal img {
   margin-left: 18px;
 }
-.nav-principal ul {
-  display: flex;
-}
-.nav-principal ul li {
+
+.offcanvas-body ul li {
   padding: 15px;
-  margin-right: 1;
-  margin: 0;
+  margin-right: 0;
 }
-.nav-principal ul li a:hover {
-  border-bottom: 2px solid #F4EAE0;
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  position: relative;
+  text-decoration: none;
 }
-.nav-principal .abrir-menu {
-  display: none;
+.nav-link:hover, .nav-link.active {
+  color: #000000;
 }
-.nav-principal .nav-menu {
-  display: flex;
-  gap: 1rem;
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: rgba(180, 110, 110, 0.4588235294);
+  visibility: hidden;
+  transition: 0.2s ease-in-out;
+}
+.nav-link:hover::before {
+  width: 100%;
+  visibility: visible;
 }
 
 /* main de index */
@@ -102,6 +136,10 @@
   width: 80px;
 }
 .footer-pagina .pie-pagina .grupo-1 .footer-seccion img {
+  width: 80px;
+}
+
+.footer-seccion img {
   width: 80px;
 }
 
@@ -244,7 +282,7 @@ main .galeria-inicio h1 {
   box-shadow: 0px 0px 13px 3px rgba(50, 50, 50, 0.256);
   width: 33%;
   border-radius: 30px;
-  border: 9px solid rgba(153, 38, 38, 0.485);
+  margin-top: 30px;
 }
 .Cards-contenedor .card .card-title {
   text-align: center;
@@ -441,6 +479,53 @@ form > button:hover {
   }
 }
 /* MediaQ Sobre nosotros */
+.contenedor-sobremi {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+}
+@media screen and (max-width: 768px) {
+  .contenedor-sobremi .row-sobremi {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+    grid-gap: 20px;
+  }
+  .contenedor-sobremi .contenedor-sobremi .contenedor-wrapper {
+    padding-left: 0;
+  }
+  .contenedor-sobremi .row-sobremi .imagen-alejo img {
+    height: auto;
+  }
+  .contenedor-sobremi .contenedor-dos span.texto-alejo h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .contenedor-sobremi .contenedor-dos span.texto-alejo span {
+    width: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenedor-sobremi .row-sobremi {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/* MediaQ Galeria */
+@media (max-width: 880px) {
+  .galeria-imagenes {
+    flex: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .galeria-imagenes {
+    flex: 100%;
+  }
+}
+/* MediaQ Contacto */
 @media screen and (max-width: 768px) {
   .contenedor-contactanos {
     margin-right: 10%;

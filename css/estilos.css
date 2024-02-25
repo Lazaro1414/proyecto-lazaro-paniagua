@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 body {
@@ -282,7 +283,7 @@ main .galeria-inicio h1 {
   width: 70px;
   height: 5px;
 }
-.contenedor-sobremi .row-sobremi .contenedor-dos .texto-alejo h2 {
+.contenedor-sobremi .row-sobremi .contenedor-dos .texto-alejo h1 {
   font-size: 50px;
   font-weight: 700;
   color: #b46e6e;

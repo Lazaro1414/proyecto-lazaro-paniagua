@@ -18,6 +18,54 @@ a {
   text-decoration: none;
 }
 
+/* Banner de inicio */
+#full {
+  display: flex;
+  margin-top: 100px;
+}
+
+.full {
+  background: url(../../img/cuadro17.jpeg) 50% 62%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: table;
+  margin: 0;
+  top: 0;
+}
+.full-inicio {
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.full-inicio .content-inicio {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.full-inicio .content-inicio h1 {
+  font-family: "century gothic", sans-serif;
+  font-size: 500%;
+  color: #ffffff;
+  text-shadow: 0 0 500px rgb(255, 255, 255);
+  margin-bottom: 80px;
+  margin-top: 80px;
+  opacity: 95%;
+}
+.full-inicio .content-inicio a {
+  margin-top: 50px;
+  font-size: 150%;
+  border-radius: 9px;
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid;
+  padding: 7px 13px;
+  text-shadow: 0 0 500px rgb(255, 255, 255);
+}
+.full-inicio .content-inicio a:hover {
+  color: #b46e6e;
+}
+
 .container-fluid {
   font-size: 17px;
   position: fixed;
@@ -74,54 +122,6 @@ a {
 }
 
 /* main de index */
-/* Banner de inicio */
-#full {
-  display: flex;
-  margin-top: 100px;
-}
-
-.full {
-  background: url(../img/cuadro17.jpeg) 50% 62%;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  display: table;
-  margin: 0;
-  top: 0;
-}
-.full-inicio {
-  width: 100%;
-  vertical-align: middle;
-  display: table-cell;
-}
-.full-inicio .content-inicio {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-.full-inicio .content-inicio h1 {
-  font-family: "century gothic", sans-serif;
-  font-size: 500%;
-  color: #ffffff;
-  text-shadow: 0 0 500px rgb(255, 255, 255);
-  margin-bottom: 80px;
-  margin-top: 80px;
-  opacity: 95%;
-}
-.full-inicio .content-inicio a {
-  margin-top: 50px;
-  font-size: 150%;
-  border-radius: 9px;
-  color: #ffffff;
-  font-weight: bold;
-  border: 3px solid;
-  padding: 7px 13px;
-  text-shadow: 0 0 500px rgb(255, 255, 255);
-}
-.full-inicio .content-inicio a:hover {
-  color: #b46e6e;
-}
-
 /* Footer */
 .footer-pagina {
   background-color: #ffffff;
@@ -159,13 +159,13 @@ a {
 }
 
 /* Banner de inicio */
-#full {
+.full {
   display: flex;
   margin-top: 100px;
 }
 
 .full {
-  background: url(../../img/cuadro17.jpeg) 50% 62%;
+  background: url(../img/cuadro17.jpeg) 50% 62%;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -221,9 +221,8 @@ main .box-galeria .galeria-imagenes {
 }
 main .box-galeria .galeria-imagenes img {
   height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-radius: 8px;
-  margin-left: 20px;
 }
 main .galeria-inicio img {
   width: 100%;

@@ -113,6 +113,7 @@
 @media (max-width: 880px) {
     .galeria-imagenes {
       flex: 50%;
+      
     }
   }
   
@@ -131,10 +132,11 @@
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 635px) {
     .contenedor-contactanos {
       grid-template-columns: 1fr;
       margin-right: 5%;
+      
     }
   }
 

@@ -578,7 +578,7 @@ form > button:hover {
     margin-right: 10%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 635px) {
   .contenedor-contactanos {
     grid-template-columns: 1fr;
     margin-right: 5%;
